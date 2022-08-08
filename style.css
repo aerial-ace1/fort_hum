@@ -1,0 +1,69 @@
+html, body{
+    color: rgb(29, 26, 26);
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+
+}
+
+#gamebox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.playarea{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#gamegrid{
+
+    width: min-content;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 600px){
+    #gamebox{flex-flow: column wrap;}   
+}
+
+@media (min-width: 600px){
+    #gamebox{flex-flow: row wrap;}   
+}
+
+.tile{
+    border: .4rem solid black;
+    border-radius: .5rem;
+    width: 4rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    transition: all 0.8s ease;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    font-size: large;
+}
+
+.no{
+    border: .5rem solid white;
+    border-radius: .5rem;
+    width: 4rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    transition: all 0.8s ease;
+    text-align: center;
+    color: black;
+    font-size: large;
+}
+
+div img{
+    max-width: 100%;
+    max-height: 100%;
+}
