@@ -120,15 +120,17 @@ function bang(no, fig) {
   );
   if (shooot > 0 && shooot < 6) {
     if (no === 2) {
+      let stage = p1[shooot];
       p1[shooot - 1] = 0;
       var new_shooot = shooot + 9;
-      p1_score += 100;
+      p2_score += 20 * stage;
       document.getElementById("p2").innerHTML = shooot;
       document.getElementById("p1").innerHTML = "Roll";
     } else {
+      let stage = p2[shooot];
       p2[shooot - 1] = 0;
       var new_shooot = shooot + 14;
-      p2_score += 100;
+      p1_score += 10 * stage;
       document.getElementById("p1").innerHTML = shooot;
       document.getElementById("p2").innerHTML = "Roll";
     }
