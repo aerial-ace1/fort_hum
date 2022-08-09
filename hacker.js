@@ -77,12 +77,12 @@ function play1() {
     p1[roll] += 1;
     document.getElementById("p1").innerHTML = roll + 1;
     document.getElementById("p2").innerHTML = "Roll";
-    fig.src = `${p1[roll]}.png`;
+    fig.src = `static_img/${p1[roll]}.png`;
     p1_score += p1[roll] * 10;
     count += 1;
     play();
   } else {
-    fig.src = "5.png";
+    fig.src = "static_img/5.png";
     setTimeout(() => {
       bang(1, fig);
     }, 500);
@@ -99,12 +99,12 @@ function play2() {
     p2[roll] += 1;
     document.getElementById("p2").innerHTML = roll + 1;
     document.getElementById("p1").innerHTML = "Roll";
-    fig.src = `${p2[roll]}.png`;
+    fig.src = `static_img/${p2[roll]}.png`;
     p2_score += p2[roll] * 10;
     count += 1;
     play();
   } else {
-    fig.src = "5.png";
+    fig.src = "static_img/5.png";
     setTimeout(() => {
       bang(2, fig);
     }, 500);
@@ -132,12 +132,12 @@ function bang(no, fig) {
       document.getElementById("p1").innerHTML = shooot;
       document.getElementById("p2").innerHTML = "Roll";
     }
-    fig.src = "5a.png";
+    fig.src = "static_img/5a.png";
     let fig1 = document.getElementById(`${new_shooot}`);
-    fig1.src = "6.png";
+    fig1.src = "static_img/6.png";
     setTimeout(() => {
       fig1.src = "";
-      fig.src = "4.png";
+      fig.src = "static_img/4.png";
       count += 1;
       play();
     }, 2000);

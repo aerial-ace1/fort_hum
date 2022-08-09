@@ -51,7 +51,7 @@ function play1() {
   let fig = document.getElementById(`${new_roll}`);
   document.getElementById("p1").innerHTML = roll + 1;
   document.getElementById("p2").innerHTML = "Roll";
-  fig.src = `${p1[roll]}.png`;
+  fig.src = `static_img/${p1[roll]}.png`;
   count += 1;
   play();
 }
@@ -67,7 +67,7 @@ function play2() {
   let fig = document.getElementById(`${new_roll}`);
   document.getElementById("p2").innerHTML = roll + 1;
   document.getElementById("p1").innerHTML = "Roll";
-  fig.src = `${p2[roll]}.png`;
+  fig.src = `static_img/${p2[roll]}.png`;
   count += 1;
   play();
 }
