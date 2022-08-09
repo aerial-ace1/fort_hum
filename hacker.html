@@ -13,22 +13,13 @@
     <h1>Toss</h1>
     <button disabled id="tossbut"> Flip </button>
     <h2 id="toss"></h2>
+    <h3>Turns Left  :  <span id="turns"></span></h3>
   </div>
   <div id="gamebox">
     <div class="playarea">
       <h1>Player 1</h1>
       <button id="p1" disabled="">Roll</button>
-      <div>
-        <select id="shoot1" disabled>
-            <option disabled selected> Person to </option>
-            <option> 1 </option>
-            <option> 2 </option>
-            <option> 3 </option>
-            <option> 4 </option>
-            <option> 5 </option>
-        </select>
-            <button id="shootp1" disabled>Shoot</button>
-        </div>
+      <h3 id="score1"></h3>
     </div>
     <div id="gamegrid">
       <div>
@@ -49,15 +40,15 @@
         </div>
       </div>
       <div>
-        <div class='no' id= 10 >1
+        <div class='no' id= 20 >1
         </div>
-        <div class='no' id= 11 >2
+        <div class='no' id= 21 >2
         </div>
-        <div class='no' id= 12 >3
+        <div class='no' id= 22 >3
         </div>
-        <div class='no' id= 13 >4
+        <div class='no' id= 23 >4
         </div>
-        <div class='no' id= 14 >5
+        <div class='no' id= 24 >5
         </div>
       </div>
       <div>
@@ -81,18 +72,20 @@
     <div class="playarea">
       <h1>Player 2</h1>
       <button id="p2" disabled>Roll</button>
-      <div>
-        <select id="shoot2" disabled>
-            <option disabled selected> Person to </option>
-            <option> 1 </option>
-            <option> 2 </option>
-            <option> 3 </option>
-            <option> 4 </option>
-            <option> 5 </option>
-        </select>
-        <button id="shootp2" disabled>Shoot</button>
-    </div>
+      <h3 id="score2"></h3>
     </div>
   </div>
-  <script src="hacker.js"></script>
+  <section class="navbar" id = "LeaderBoard">
+        <div>
+                LeaderBoard
+        </div>
+    </section>
+    <br>
+    <section id="standings">
+        <div class="lead">1. <span id="first"></span></div>
+        <div class="lead">2. <span id="second"></span></div>
+        <div class="lead">3. <span id="third"></span></div>
+    </section>
+    <script src="leaderboard.js"></script>
+    <script src="hacker.js"></script>
 </body>
