@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset=utf-8>
-  <title>Fortunate Humanae</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fortunate Humanae</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="topdiv">
+      <div class="headdiv">
+        <h1 class="forthum">FORTUNATE<br>HUMANAE</h1>
+        <button id="play" onclick="start()">PLAY</button>
+      </div>
+      <div class="tossdiv">
+          <h1 id="tossh1">TOSS</h1>
+          <button disabled id="tossbut">FLIP</button>
+          <h2 id="toss"></h2>
+      </div>
+    </div>
+    <div id="gamebox">
+      <div class="playarea">
+        <h3 class="playareah3">Player 1</h1>
+        <button id="p1" disabled="">ROLL</button>
 
-</head>
-<body>
-  <button id="play" onclick="start()">Play</button>
-  <div>
-    <h1>Toss</h1>
-    <button disabled id="tossbut"> Flip </button>
-    <h2 id="toss"></h2>
-  </div>
-  <div id="gamebox">
-    <div class="playarea">
-      <h1>Player 1</h1>
-      <button id="p1" disabled="">Roll</button>
     </div>
-    <div id="gamegrid">
-      <div>
-        <div class='tile' id= 0 >
-          <img id = 10 >
+      <div id="gamegrid">
+        <div>
+          <div class="tile" id="0">
+            <img id="10" />
+          </div>
+          <div class="tile" id="1">
+            <img id="11" />
+          </div>
+          <div class="tile" id="2">
+            <img id="12" />
+          </div>
+          <div class="tile" id="3">
+            <img id="13" />
+          </div>
+          <div class="tile" id="4">
+            <img id="14" />
+          </div>
         </div>
-        <div class='tile' id= 1 >
-          <img id = 11 >
+        <div>
+          <div class="no" id="10">1</div>
+          <div class="no" id="11">2</div>
+          <div class="no" id="12">3</div>
+          <div class="no" id="13">4</div>
+          <div class="no" id="14">5</div>
         </div>
-        <div class='tile' id= 2 >
-          <img id = 12 >
-        </div>
-        <div class='tile' id= 3 >
-          <img id = 13 >
-        </div>
-        <div class='tile' id= 4 >
-          <img id = 14 >
+        <div>
+          <div class="tile" id="5">
+            <img id="15" />
+          </div>
+          <div class="tile" id="6">
+            <img id="16" />
+          </div>
+          <div class="tile" id="7">
+            <img id="17" />
+          </div>
+          <div class="tile" id="8">
+            <img id="18" />
+          </div>
+          <div class="tile" id="9">
+            <img id="19" />
+          </div>
         </div>
       </div>
-      <div>
-        <div class='no' id= 10 >1
-        </div>
-        <div class='no' id= 11 >2
-        </div>
-        <div class='no' id= 12 >3
-        </div>
-        <div class='no' id= 13 >4
-        </div>
-        <div class='no' id= 14 >5
-        </div>
-      </div>
-      <div>
-        <div class='tile' id= 5 >
-          <img id = 15 >
-        </div>
-        <div class='tile' id= 6 >
-          <img id = 16 >
-        </div>
-        <div class='tile' id= 7 >
-          <img id = 17 >
-        </div>
-        <div class='tile' id= 8 >
-          <img id = 18 >
-        </div>
-        <div class='tile' id= 9 >
-          <img id = 19 >
-        </div>
-      </div>
+
+      <div class="playarea">
+        <h3 class="playareah3">Player 2</h1>
+        <button id="p2" disabled>ROLL</button>
+
     </div>
-    <div class="playarea">
-      <h1>Player 2</h1>
-      <button id="p2" disabled>Roll</button>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
+</html>

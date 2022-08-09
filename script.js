@@ -22,7 +22,7 @@ function start() {
 
 function playtoss() {
   count = randint(2);
-  toss.innerHTML = "Player " + (count + 1) + " starts!";
+  toss.innerHTML = "Player " + (count + 1) + "<br> starts!";
   tossbut.disabled = true;
   play();
 }

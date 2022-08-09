@@ -1,69 +1,136 @@
-html, body{
-    color: rgb(29, 26, 26);
-    margin: 0px;
-    padding: 0px;
-    scroll-behavior: smooth;
-
-}
-
-#gamebox{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.playarea{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#gamegrid{
-
-    width: min-content;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    justify-content: space-around;
-}
-
-
-@media (max-width: 600px){
-    #gamebox{flex-flow: column wrap;}   
-}
-
-@media (min-width: 600px){
-    #gamebox{flex-flow: row wrap;}   
-}
-
-.tile{
-    border: .4rem solid black;
-    border-radius: .5rem;
-    width: 4rem;
-    height: 3rem;
-    font-size: 1.5rem;
-    transition: all 0.8s ease;
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 16px;
     text-align: center;
-    color: white;
-    background: rgba(0,0,0,0.5);
-    font-size: large;
-}
-
-.no{
-    border: .5rem solid white;
-    border-radius: .5rem;
-    width: 4rem;
-    height: 3rem;
-    font-size: 1.5rem;
-    transition: all 0.8s ease;
-    text-align: center;
-    color: black;
-    font-size: large;
-}
-
-div img{
-    max-width: 100%;
-    max-height: 100%;
-}
+    color: #F2C2D8;
+    background-color: #730237;
+    font-family: "Inter", sans-serif;
+    background: rgba(0, 0, 0, 0.4) url("./assets/topdiv.jpeg");
+    background-blend-mode: darken;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 1.5rem 1.5rem 3rem;
+    font-size: 8rem;
+    font-weight: 900;
+  }
+  h2 {
+    margin: 1.5rem;
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  h3 {
+      margin: 0 0 5rem;
+      font-size: 3rem;
+      font-weight: 800;
+  }
+  button {
+    margin: 0;
+    padding: 1rem 1.7rem;
+    color: #730237;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: #F2C2D8;
+    border: 0;
+  }
+  button:hover {
+    background-color: #F279B2;
+  }
+  button:disabled {
+      background: rgba(203, 203, 203, 0.25);
+      backdrop-filter: blur(8px);   
+  }
+  .topdiv {
+    margin: 0;
+    padding: 1.5rem 5rem 5rem;
+  }
+  #play {
+      margin: 0 0 4rem;
+  }
+  .tossdiv {
+      margin: 0;
+      height: 20rem;
+      padding: 2rem 3rem;
+      background: rgba(0,0,0,0.25);
+      backdrop-filter: blur(4px);   
+  }
+  #tossh1, #tossbut {
+      margin: 1rem;
+      position: relative;
+      right: 20rem;
+      top: 3rem;
+  }
+  #tossh1 {
+      font-weight: 800;
+      font-size: 6rem;
+  }
+  #toss {
+      position: relative;
+      left: 20rem;
+      bottom: 11rem;
+  }
+  #p1, #p2 {
+      width: 7rem;
+  }
+  /* LOLOLOLLOLLOLLLOLLOLLOOLOLOLOLOLOLOLOLOLOLOLOLLOOL */
+  
+  #gamebox{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      max-width: 120%;
+      margin: 3rem auto;
+  }
+  
+  .playarea{
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #gamegrid{
+      width: min-content;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      justify-content: space-around;
+  }
+  
+  
+  @media (max-width: 600px){
+      #gamebox{flex-flow: column wrap;}   
+  }
+  
+  @media (min-width: 600px){
+      #gamebox{flex-flow: row wrap;}   
+  }
+  
+  .tile{
+      margin: 0.6rem;
+      width: 8rem;
+      height: 6rem;
+      font-size: 1.5rem;
+      transition: all 0.8s ease;
+      text-align: center;
+      color: white;
+      background: rgba(255,255,255,0.3);
+      backdrop-filter: blur(4px);
+  }
+  
+  .no{
+      background: rgba(0,0,0,0.15);
+      backdrop-filter: blur(4px);
+      padding: 1.8rem 0 0 0;
+      margin: 0.6rem;
+      width: 8rem;
+      height: 4.2rem;
+      font-size: 2rem;
+      font-weight: 800;
+      transition: all 0.8s ease;
+      text-align: center;
+  }
+  div img{
+      max-width: 100%;
+      max-height: 100%;
+  }
